@@ -1,0 +1,99 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FAFAFA;
+}
+.dash-debug-menu{
+    display:none;
+}
+.header {
+    background-color: #235b4e;
+    color: white;
+    padding: 0px 0;
+    border-width: 0px;
+    border-top-width: 1px;
+    border-top-color: #bc955c;
+}
+
+.descripcion{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -25px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px;
+    margin-right: 0px;
+    background: linear-gradient(90deg,rgb(105,28,50) 0%,rgb(159,34,65) 100%);
+    background-clip: padding-box;
+}
+.descripcion-container{
+    min-width: unset !important;
+    color:white;
+    width: 100%;
+    position: relative;
+}
+
+.linea{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #bc955c;
+}
+
+
+.page-container{
+    adding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: linear-gradient(90deg,rgb(221,201,163) 0%,rgb(255,255,230) 100%);
+    width: 80%; 
+    margin: 50px auto;
+}
+
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-title {
+    text-align: center;
+}
+
+.main-content {
+    flex: 1;
+    margin: 40px auto;
+    width: 80%;
+    /* Agrega estilos adicionales según tu contenido */
+}
+
+.footer {
+    background-color: #235b4e;
+    color: white;
+    padding: 10px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    grid-column-gap: 50px;
+}
+.footer-container img{
+    margin-right:10px;
+}
+
+.footer-container img:last-child {
+    margin-right: 0;
+}
+
+
+.footer-text {
+    margin: 0;
+    /* Agrega estilos adicionales si es necesario */
+}
