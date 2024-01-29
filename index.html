@@ -31,7 +31,125 @@
 
 
     </div>
+    <div class="page2">
+        <div class="page2-container">
+        <h1 class="h1-title">Muestra de los archivos multimedia</h1>
+        <p>nhskjfdhkjhbfkdsajfdsbfkdsjfbjdbvbdjkvfdjbvjbvfsbvkjfbvkjvjdsfjbfjksdbfjksbvsbvjfbvk</p>
+        <p>nhskjfdhkjhbfkdsajfdsbfkdsjfbjdbvbdjkvfdjbvjbvfsbvkjfbvkjvjdsfjbfjksdbfjksbvsbvjfbvk</p>
+        <p>nhskjfdhkjhbfkdsajfdsbfkdsjfbjdbvbdjkvfdjbvjbvfsbvkjfbvkjvjdsfjbfjksdbfjksbvsbvjfbvk</p>
+        <p>nhskjfdhkjhbfkdsajfdsbfkdsjfbjdbvbdjkvfdjbvjbvfsbvkjfbvkjvjdsfjbfjksdbfjksbvsbvjfbvk</p>
+        <p>nhskjfdhkjhbfkdsajfdsbfkdsjfbjdbvbdjkvfdjbvjbvfsbvkjfbvkjvjdsfjbfjksdbfjksbvsbvjfbvk</p>
+        <p>nhskjfdhkjhbfkdsajfdsbfkdsjfbjdbvbdjkvfdjbvjbvfsbvkjfbvkjvjdsfjbfjksdbfjksbvsbvjfbvk</p>
+        <p>nhskjfdhkjhbfkdsajfdsbfkdsjfbjdbvbdjkvfdjbvjbvfsbvkjfbvkjvjdsfjbfjksdbfjksbvsbvjfbvk</p>
+        <p>nhskjfdhkjhbfkdsajfdsbfkdsjfbjdbvbdjkvfdjbvjbvfsbvkjfbvkjvjdsfjbfjksdbfjksbvsbvjfbvk</p>
+        <div class="instrucciones-tipo-grafico"></div>
+        <div id="search-box">
+            <input type="text" id="search-input" placeholder="Buscar...">
+            <button onclick="search()">Buscar</button>
+        </div>
+        <div class="container">
 
+            <!-- Sección de filtros -->
+            <aside class="filters">
+                <div class="filter-menu">
+                    <h2 class="h2-title">Filtros</h2>
+                    <ul class="filter-category">
+                        <li class="filter-item">
+                            <span>Base</span>
+                            <span class="filter-count">5</span>
+                        </li>
+                        <li class="filter-item">
+                            <span>Collection</span>
+                            <ul class="sub-category">
+                                <li>
+                                    <a href="#">Patrimonio Cultural</a>
+                                    <span class="filter-count">3</span>
+                                </li>
+                                <li>
+                                    <a href="#">Patrimonio Natural</a>
+                                    <span class="filter-count">1</span>
+                                </li>
+                                <li>
+                                    <a href="#">Public</a>
+                                    <span class="filter-count">1</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="filter-item">
+                            <span>Doctype</span>
+                            <ul class="sub-category">
+                                <li>
+                                    <a href="#">image</a>
+                                    <span class="filter-count">3</span>
+                                </li>
+                                <li>
+                                    <a href="#">document</a>
+                                    <span class="filter-count">1</span>
+                                </li>
+                                <li>
+                                    <a href="#">video</a>
+                                    <span class="filter-count">1</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="filter-item">
+                            <span>Thumbnailorientation</span>
+                            <ul class="sub-category">
+                                <li>
+                                    <a href="#">Landscape</a>
+                                    <span class="filter-count">3</span>
+                                </li>
+                                <li>
+                                    <a href="#">Portrait</a>
+                                    <span class="filter-count">2</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+            </aside>
+        
+            <!-- Sección principal para los elementos de la grilla -->
+            <main class="content">
+                <div class="grid-item">
+                    <img src="image1.png" alt="Descripción de la imagen 1">
+                </div>
+                <div class="grid-item">
+                    <img src="image2.png" alt="Descripción de la imagen 2">
+                </div>
+                <div class="grid-item">
+                    <img src="image3.png" alt="Descripción de la imagen 3">
+                </div>
+                <!-- Más elementos si son necesarios -->
+                <div id="results"></div>
+            <!-- La imagen que el usuario puede hacer clic -->
+            <div class="grid-item">
+            <img src="image1.png" alt="Descripción" id="myImg" />
+
+            <!-- El Modal, que inicialmente está oculto -->
+            <div id="myModal" class="modal">
+            <!-- Contenido del Modal -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <!-- Aquí pones lo que quieras mostrar en la ventana emergente -->
+                <p>wiiiiiiiiiweieiiwieoier</p>
+                <p>pauoidjfisdjhju</p>
+                <span>despierta</span>
+                <img src="image2.png" alt="Descripción ampliada" />
+                <!-- Puedes agregar más contenido si lo necesitas -->
+            </div>
+            </div>
+            </div>
+            </main>
+        
+        </div>
+
+
+
+        </div>
+
+    </div>
     <div class="footer">
         <div class="footer-container">
             <img src="https://ipdp-test.nueve09.io/wp-content/uploads/2023/07/logo-cdmx-blanco-transparente-300x73.png" alt="cdmx">
@@ -41,6 +159,8 @@
 
     </div>
 
+
 </div>
+<script src="script.js"></script>
 </body>
 </html>

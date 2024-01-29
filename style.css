@@ -1,9 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .page {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #FAFAFA;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
+
+.page p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #6F7271;
+}
+
+
+
 .dash-debug-menu{
     display:none;
 }
@@ -14,6 +33,10 @@
     border-width: 0px;
     border-top-width: 1px;
     border-top-color: #bc955c;
+}
+.h1-title{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #98989A;
 }
 
 .descripcion{
@@ -26,7 +49,7 @@
     margin-left: 0px;
     margin-right: 0px;
     background: linear-gradient(90deg,rgb(105,28,50) 0%,rgb(159,34,65) 100%);
-    background-clip: padding-box;
+    /* background-clip: padding-box; */
 }
 .descripcion-container{
     min-width: unset !important;
@@ -45,13 +68,38 @@
 
 
 .page-container{
-    adding-top: 30px;
+    padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    /* padding-left: 30px;
+    padding-right: 30px; */
     background: linear-gradient(90deg,rgb(221,201,163) 0%,rgb(255,255,230) 100%);
     width: 80%; 
     margin: 50px auto;
+}
+
+.page2{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #DDc9A3;
+    margin: 10;
+    padding: 10;
+    width: 100%;
+    box-sizing: border-box;
+}
+.page p {
+    font-family: 'Gotham', sans-serif;
+    color: #98989A;
+}
+.page2-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: linear-gradient(90deg,#BC955C  0%,rgb(255, 248, 234) 100%);
+    width: 80%; 
+    margin: 50px auto;
+    border-radius: 10px 20px;
 }
 
 .header-container {
@@ -96,4 +144,158 @@
 .footer-text {
     margin: 0;
     /* Agrega estilos adicionales si es necesario */
+}
+
+
+/* Aqui es la parte de las imagenes en las cuales se facilitara todo el aspecto */
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.filters {
+    flex: 1;
+    min-width: 200px; /* Tamaño mínimo para los filtros */
+    margin-right: 20px; /* Espacio entre los filtros y la grilla */
+}
+
+.content {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.grid-item {
+    flex-basis: 100%; /* Ocupa el 100% del ancho en móviles */
+    margin-bottom: 20px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+/* Estilos para pantallas más grandes (escritorio) */
+@media (min-width: 768px) {
+    .grid-item {
+        flex-basis: calc(33.333% - 20px); /* Tres elementos por fila con margen */
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-item {
+        flex-basis: calc(25% - 20px); /* Cuatro elementos por fila con margen para pantallas más grandes */
+    }
+}
+
+
+/* Aqui esta lo adicional para los filtros */
+.filter-menu {
+    width: 100%;
+    border: 1px solid #ddd; /* Ajusta el color del borde según sea necesario */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.filter-menu h2 {
+    margin: 0 0 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* Ajusta el color del borde según sea necesario */
+}
+
+.filter-category, .sub-category {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-item {
+    padding: 5px 0; /* Ajusta el padding según sea necesario */
+}
+
+.filter-item span, .filter-item a {
+    margin-right: 10px;
+}
+
+.filter-count {
+    float: right;
+    background-color: #eee; /* Ajusta el color de fondo según sea necesario */
+    border-radius: 10px; /* Círculo si es un número de un */
+    padding: 2px 6px; /* Ajusta el padding según sea necesario */
+    font-size: 0.8em;
+}
+
+.sub-category {
+    padding-left: 20px; /* Indentación para subcategorías */
+}
+
+.sub-category li {
+    border-top: 1px solid #ddd; /* Ajusta el color del borde según sea necesario */
+    padding: 5px 0; /* Ajusta el padding según sea necesario */
+}
+.h2-title{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #98989A;
+}
+
+
+/* Estilo para el fondo oscuro del Modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en toda la pantalla */
+    z-index: 1; /* Situado por encima del resto */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Habilita el scroll si es necesario */
+    background-color: rgb(0,0,0); /* Fondo negro */
+    background-color: rgba(0,0,0,0.4); /* Negro con opacidad */
+}
+
+/* Estilo para el contenido del Modal */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto; /* 15% desde arriba y centrado */
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Podrías querer un ancho menor o mayor */
+}
+
+/* El botón cerrar (x) */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+  /* aqui es para la barra de busqueda */
+
+#search-box {
+    margin: 20px;
+    text-align: center;
+}
+
+#search-input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: center;
 }
