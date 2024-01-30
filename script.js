@@ -10,10 +10,18 @@ var modal = document.getElementById('myModal');
 // Obtén la imagen e inserta dentro del modal - usa su "alt" como texto
 var img = document.getElementById('myImg');
 var modalImg = document.getElementById("img01");
+
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
 }
+
+// var imgx = document.getElementById('myimagenexp');
+
+// imgx.onclick = function(){
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+// }
 
 // Obtén el elemento <span> que cierra el modal
 var span = document.getElementsByClassName("close")[0];

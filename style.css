@@ -19,6 +19,8 @@ html, body {
 .page p {
     font-family: 'Source Sans Pro', sans-serif;
     color: #6F7271;
+    display: flex;
+
 }
 
 
@@ -76,7 +78,15 @@ html, body {
     width: 80%; 
     margin: 50px auto;
 }
-
+.page-texto{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: linear-gradient(90deg,rgb(221,201,163) 0%,rgb(255,255,230) 100%);
+    width: 80%; 
+    margin: 50px auto;
+}
 .page2{
     display: flex;
     flex-direction: column;
@@ -261,13 +271,25 @@ html, body {
 
 /* Estilo para el contenido del Modal */
 .modal-content {
-background-color: #fefefe;
-margin: 15% auto; /* 15% desde arriba y centrado */
+/* background-color: #fefefe;
+margin: 15% auto;
 padding: 20px;
 border: 1px solid #888;
-width: 80%; /* Podrías querer un ancho menor o mayor */
+width: 80%; */
+width: 600px; /* O el ancho que desees */
+max-height: 400px; /* O la altura máxima que desees */
+overflow-y: auto; /* Agrega una barra de desplazamiento vertical si el contenido es demasiado alto */
+margin: auto; /* Centra el modal */
+position: relative; /* Posicionamiento relativo para el modal */
+padding: 20px;
+box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho establecido */
+background: #DDc9A3; /* Fondo blanco, o el color que prefieras */
+border-radius: 8px;
 }
-
+.modal-body {
+    max-height: 340px; /* Altura máxima para el cuerpo del modal */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si el contenido es demasiado alto */
+  }
 /* El botón cerrar (x) */
 .close {
 color: #aaa;
@@ -299,3 +321,10 @@ cursor: pointer;
     margin-top: 20px;
     text-align: center;
 }
+.table-responsive {
+    overflow-x: auto; /* Hace que la tabla sea desplazable horizontalmente si el contenido desborda */
+  }
+  td {
+    border-bottom:1px solid #000; /* Establece un borde sólido para las celdas */
+    padding: 8px; /* Espacio dentro de las celdas */
+  }
